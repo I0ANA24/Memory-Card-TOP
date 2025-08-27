@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+* {
+  font-family: "Creepster", "Times New Roman", "Times New Roman", Times, serif;
+}
