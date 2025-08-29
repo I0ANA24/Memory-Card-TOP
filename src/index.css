@@ -3,3 +3,11 @@
 * {
   font-family: "Creepster", "Times New Roman", "Times New Roman", Times, serif;
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}

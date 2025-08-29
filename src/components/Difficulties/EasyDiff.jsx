@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import Card from "../ui/Card";
 
-const EasyDiff = () => {
+const EasyDiff = ({
+  score,
+  setScore,
+  highScore,
+  setHighScore,
+  characters,
+  setCharacters,
+}) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      {characters.slice(0, 6).map((character, index) => (
+        <Card character={character} key={index} />
+      ))}
+    </>
+  );
+};
 
-export default EasyDiff
+export default EasyDiff;
